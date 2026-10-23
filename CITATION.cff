@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you reuse this software, cite the versioned repository or release."
+title: "Agent Uncertainty Wire: a reproducible synthetic benchmark"
+version: 0.3.0
+date-released: 2026-10-23
+authors:
+  - family-names: Hussain
+    given-names: Muzammal
+license: MIT
+type: software

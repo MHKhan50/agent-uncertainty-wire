@@ -1,0 +1,28 @@
+{
+  "project": "Agent Uncertainty Wire",
+  "version": "0.3.0",
+  "run_date": "2026-10-23",
+  "python_runtime_used_for_packaging": "3.13.5",
+  "default_seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "scenarios_per_seed": 2500,
+  "synthetic_agent_message_rows": 75000,
+  "held_out_prediction_rows": 75000,
+  "external_dependencies": [],
+  "llm_calls": 0,
+  "calibration_method": "per-seed/regime/agent logistic calibration fitted on calibration split",
+  "team_policies": [
+    "label_only_majority",
+    "confidence_weighted_raw",
+    "confidence_weighted_calibrated",
+    "independent_log_odds_raw",
+    "independent_log_odds_calibrated"
+  ],
+  "automated_tests": 8,
+  "notes": "Synthetic benchmark only; log-odds policies assume balanced prior and conditionally independent agent errors."
+}

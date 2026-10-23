@@ -1,0 +1,7 @@
+The generated synthetic dataset in data/ and derived benchmark result tables in outputs/ are offered under the Creative Commons Attribution 4.0 International licence (CC BY 4.0).
+
+Licence text: https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution: Muzammal Hussain, "Agent Uncertainty Wire: synthetic agent uncertainty messages", version 0.3.0 (2026), generated with the accompanying benchmark code.
+
+The software code is separately licensed under MIT (see LICENSE). This licence statement is not legal advice.

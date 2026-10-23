@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="90" y="28" font-family="Arial" font-size="20" font-weight="bold">Agent reliability: overconfident regime</text>
+<line x1="90.0" y1="530.0" x2="90.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="530.0" x2="675.0" y2="530.0" stroke="black" stroke-opacity="0.15"/>
+<text x="90.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">0.0</text>
+<text x="80" y="534.0" text-anchor="end" font-family="Arial" font-size="12">0.0</text>
+<line x1="207.0" y1="530.0" x2="207.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="435.0" x2="675.0" y2="435.0" stroke="black" stroke-opacity="0.15"/>
+<text x="207.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">0.2</text>
+<text x="80" y="439.0" text-anchor="end" font-family="Arial" font-size="12">0.2</text>
+<line x1="324.0" y1="530.0" x2="324.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="340.0" x2="675.0" y2="340.0" stroke="black" stroke-opacity="0.15"/>
+<text x="324.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">0.4</text>
+<text x="80" y="344.0" text-anchor="end" font-family="Arial" font-size="12">0.4</text>
+<line x1="441.0" y1="530.0" x2="441.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="245.0" x2="675.0" y2="245.0" stroke="black" stroke-opacity="0.15"/>
+<text x="441.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">0.6</text>
+<text x="80" y="249.0" text-anchor="end" font-family="Arial" font-size="12">0.6</text>
+<line x1="558.0" y1="530.0" x2="558.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="150.0" x2="675.0" y2="150.0" stroke="black" stroke-opacity="0.15"/>
+<text x="558.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">0.8</text>
+<text x="80" y="154.0" text-anchor="end" font-family="Arial" font-size="12">0.8</text>
+<line x1="675.0" y1="530.0" x2="675.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<line x1="90.0" y1="55.0" x2="675.0" y2="55.0" stroke="black" stroke-opacity="0.15"/>
+<text x="675.0" y="554.0" text-anchor="middle" font-family="Arial" font-size="12">1.0</text>
+<text x="80" y="59.0" text-anchor="end" font-family="Arial" font-size="12">1.0</text>
+<line x1="90.0" y1="530.0" x2="675.0" y2="55.0" stroke="black" stroke-dasharray="6 5"/>
+<polyline points="494.3,277.6 531.6,251.8 586.0,213.6 644.1,174.8" fill="none" stroke="black" stroke-width="2" />
+<circle cx="494.3" cy="277.6" r="5.2" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="531.6" cy="251.8" r="7.0" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="586.0" cy="213.6" r="7.0" fill="white" stroke="black" stroke-width="2"/>
+<circle cx="644.1" cy="174.8" r="6.7" fill="white" stroke="black" stroke-width="2"/>
+<polyline points="412.7,258.7 470.5,214.5 520.0,184.7 574.2,151.5" fill="none" stroke="black" stroke-width="2" stroke-dasharray="7 4" />
+<rect x="405.7" y="251.7" width="14.0" height="14.0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="463.5" y="207.5" width="14.0" height="14.0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="513.9" y="178.6" width="12.3" height="12.3" fill="white" stroke="black" stroke-width="2"/>
+<rect x="569.5" y="146.8" width="9.5" height="9.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="150" y="585" font-family="Arial" font-size="13">Mean predicted correctness probability</text>
+<text x="22" y="292.5" transform="rotate(-90 22 292.5)" text-anchor="middle" font-family="Arial" font-size="13">Observed correctness rate</text>
+<line x1="95" y1="555" x2="125" y2="555" stroke="black" stroke-dasharray="6 5"/>
+<text x="132" y="559" font-family="Arial" font-size="12">Perfect calibration</text>
+<line x1="310" y1="555" x2="340" y2="555" stroke="black"/>
+<text x="347" y="559" font-family="Arial" font-size="12">Raw / calibrated curves use circles / squares</text>
+</svg>
