@@ -1,0 +1,19 @@
+{
+  "experiment": "correlated-errors",
+  "synthetic_only": true,
+  "seeds": 5,
+  "scenarios_per_seed": 2500,
+  "skills": [
+    0.8,
+    0.7,
+    0.62
+  ],
+  "q_values": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "q_interpretation": "shared-shock mixture probability, not pairwise correlation"
+}

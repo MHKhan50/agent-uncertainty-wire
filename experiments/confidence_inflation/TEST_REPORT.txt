@@ -1,0 +1,13 @@
+Test command: python3 -m unittest discover -s tests -v
+test_correction_bounded (test_experiment.Tests.test_correction_bounded) ... ok
+test_deterministic (test_experiment.Tests.test_deterministic) ... ok
+test_metrics_bounded (test_experiment.Tests.test_metrics_bounded) ... ok
+test_size (test_experiment.Tests.test_size) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+Smoke run: python3 run_experiment.py --seeds 5
+Wrote 60 summary rows to outputs/metrics_summary.csv and manifest.
