@@ -56,16 +56,30 @@ The run saves every reply to `outputs/replies.jsonl` and can be stopped and rest
 
 ## Results
 
-Not run yet. This section will be filled from `outputs/` after the first run.
+Run on 24 October 2026 on a MacBook M4 (16 GB) with Ollama 0.40.10; 288 replies, none unusable. Numbers from `outputs/`.
 
 | Agent | Language | Accuracy | Mean confidence | ECE |
 |---|---|---|---|---|
-| qwen_plain | English | _pending_ | _pending_ | _pending_ |
-| qwen_plain | Roman Urdu | _pending_ | _pending_ | _pending_ |
-| llama_plain | English | _pending_ | _pending_ | _pending_ |
-| llama_plain | Roman Urdu | _pending_ | _pending_ | _pending_ |
-| qwen_checker | English | _pending_ | _pending_ | _pending_ |
-| qwen_checker | Roman Urdu | _pending_ | _pending_ | _pending_ |
+| qwen_plain | English | 95.8% | 99.2% | 0.050 |
+| qwen_plain | Roman Urdu | 85.4% | 99.4% | 0.140 |
+| llama_plain | English | 97.9% | 100% | 0.021 |
+| llama_plain | Roman Urdu | 91.7% | 100% | 0.083 |
+| qwen_checker | English | 97.9% | 98.5% | 0.027 |
+| qwen_checker | Roman Urdu | 87.5% | 99.0% | 0.115 |
+
+- **Confidence carried almost no information:** 20 of the 21 wrong answers had confidence 100 (the other had 90). llama3.1:8b gave 100 on all 96 answers.
+- **Left and right failed in Roman Urdu only:** on the 4 questions that name the wrong side of the body, all three agents answered "yes" on 3 (knee, heel, arm) and both qwen agents on the fourth (shoulder). In English all 4 were answered correctly by every agent.
+- **No "yes" to things not in the note:** all 24 `not_in_note` questions were answered correctly by every agent.
+- **Shared errors:** in Roman Urdu, `qwen_plain` and `qwen_checker` were both wrong on 12.5% of questions, against 1.8% expected if independent (ratio 6.9). Every `qwen_checker` error was also a `qwen_plain` error. The cross-model pairs had ratios of 5.1 and 6.0.
+- **Team rules:** all five rules scored 100% in English and 87.5% in Roman Urdu, below `llama_plain` alone (91.7%). With confidence almost always 100, calibration had nothing to work with.
+
+## Observations
+
+1. A wrong side in a clinical note is a serious safety risk: a plan for the wrong knee could harm a patient. Here the side errors appeared only in Roman Urdu, which matters for MeetPhysio. These were invented notes and a yes/no test, not output from MeetPhysio.
+2. When a model gives 100% confidence on almost every answer, right or wrong, the score tells me almost nothing. I would not use verbal confidence from these models to decide when to trust an agent; a separate check is needed.
+3. The checker used the same model, so a new role did not change its mistakes. My guess is that the weakness is in how the model reads Roman Urdu side words, possibly at tokenisation level, but this is not tested. A different model (llama3.1:8b) made fewer mistakes but still failed the same three side questions, so changing the model alone is not enough either.
+
+Write-up: [Three local AI models mixed up left and right in Roman Urdu, and were sure they were right](https://masmatixinnovations.co.uk/insights/roman-urdu-left-right-confidence.html)
 
 ## Limitations
 

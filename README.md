@@ -70,7 +70,7 @@ The paired intervals in `paired_policy_differences.csv` use differences between 
 | `experiments/correlated_errors/` | Majority voting when agents fail together | simulated |
 | `experiments/real_llm_confidence/` | Real verbal confidence of qwen2.5:3b and llama3.1:8b on clinic notes in English and Roman Urdu, error overlap and the same five rules | local LLMs (Ollama) |
 
-Write-ups: [Averaging agents' confidence made the team less trustworthy](https://masmatixinnovations.co.uk/insights/agent-uncertainty-wire.html), [A one-number fix for overconfident agents worked, but barely](https://masmatixinnovations.co.uk/insights/confidence-inflation-calibration.html), [When AI agents fail together, more votes do not help](https://masmatixinnovations.co.uk/insights/correlated-errors-multi-agent-decisions.html).
+Write-ups: [Averaging agents' confidence made the team less trustworthy](https://masmatixinnovations.co.uk/insights/agent-uncertainty-wire.html), [A one-number fix for overconfident agents worked, but barely](https://masmatixinnovations.co.uk/insights/confidence-inflation-calibration.html), [When AI agents fail together, more votes do not help](https://masmatixinnovations.co.uk/insights/correlated-errors-multi-agent-decisions.html), [Three local AI models mixed up left and right in Roman Urdu, and were sure they were right](https://masmatixinnovations.co.uk/insights/roman-urdu-left-right-confidence.html).
 
 ## Reuse
 
