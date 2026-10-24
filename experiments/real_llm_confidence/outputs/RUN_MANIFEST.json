@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-10-24 21:07",
+  "ollama_version": "0.40.10",
+  "agents": {
+    "qwen_plain": "qwen2.5:3b",
+    "llama_plain": "llama3.1:8b",
+    "qwen_checker": "qwen2.5:3b"
+  },
+  "temperature": 0,
+  "seed": 7,
+  "items": 48,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "folds_by_note": 4
+}

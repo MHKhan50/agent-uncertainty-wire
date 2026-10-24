@@ -1,7 +1,7 @@
-# Agent Uncertainty Wire: a reproducible synthetic benchmark
+# Agent Uncertainty Wire: how AI agents report and combine confidence
 
 **Version:** 0.3.0 · **Author:** Muzammal Hussain · **Date:** 23 October 2026  
-**Runtime:** Python 3.9+; standard library only. No internet, cloud API, paid service, Ollama or LLM call is required.
+**Runtime:** Python 3.9+; standard library only. The synthetic benchmark needs no internet or LLM; the real-model experiment needs Ollama.
 
 ## Research question
 
@@ -9,29 +9,23 @@ In a controlled binary-decision task with heterogeneous agents, how do simple co
 
 This is a **synthetic benchmark**, not an evaluation of real LLMs or proof that a real agent system is safe.
 
-## Why this topic?
-
-The University of Edinburgh's official “Uncertainty-Aware Agentic AI” research theme names uncertainty elicitation, communication, propagation and team-level calibration as research challenges. The University of Glasgow's 2026 agentic-AI/software-engineering partnership and the University of Surrey's announced AI-agent sandbox project are related research context, not evidence that this exact benchmark is novel or university-endorsed. See `REFERENCES.md`.
-
-## Run on a Mac
-
-Extract the ZIP, open Terminal in the extracted `agent-uncertainty-wire` folder, and run:
+## Run
 
 ```bash
 python3 run_all.py
 python3 -m unittest discover -s tests -v
 ```
 
-No `pip install` is required. The default run regenerates:
+No `pip install` is needed. The run regenerates:
 
-- `data/agent_messages.csv` — synthetic agent messages, calibration/test split and two confidence regimes.
-- `outputs/predictions.csv` — held-out predictions for all five policies.
-- `outputs/seed_summary.csv` — metrics per seed, regime and policy.
-- `outputs/metrics_summary.csv` — means and between-seed standard deviations.
-- `outputs/paired_policy_differences.csv` — paired differences across seeds with descriptive t intervals.
-- `outputs/agent_calibration_diagnostics.csv` and `outputs/agent_reliability_bins.csv` — held-out agent-level calibration diagnostics.
-- `outputs/accuracy.svg`, `outputs/brier_score.svg`, `outputs/ece.svg` — team-level metric charts.
-- `outputs/agent_reliability_calibrated.svg`, `outputs/agent_reliability_overconfident.svg` — agent reliability diagrams by regime.
+- `data/agent_messages.csv`: synthetic agent messages, calibration/test split and two confidence regimes.
+- `outputs/predictions.csv`: held-out predictions for all five policies.
+- `outputs/seed_summary.csv`: metrics per seed, regime and policy.
+- `outputs/metrics_summary.csv`: means and between-seed standard deviations.
+- `outputs/paired_policy_differences.csv`: paired differences across seeds with descriptive t intervals.
+- `outputs/agent_calibration_diagnostics.csv` and `outputs/agent_reliability_bins.csv`: held-out agent-level calibration diagnostics.
+- `outputs/accuracy.svg`, `outputs/brier_score.svg`, `outputs/ece.svg`: team-level metric charts.
+- `outputs/agent_reliability_calibrated.svg`, `outputs/agent_reliability_overconfident.svg`: agent reliability diagrams by regime.
 
 ## Experimental design
 
@@ -66,8 +60,18 @@ The paired intervals in `paired_policy_differences.csv` use differences between 
 3. The logistic calibrator can fail under distribution shift, changing reliability, small calibration samples or correlated errors. Better agent-level calibration does not guarantee better team-level probabilities.
 4. Three simulated agents and binary labels do not represent tool-using LLMs or long-horizon planning.
 5. Rankings depend on simulator assumptions; do not call these results real-world validation, a safety guarantee or proof that confidence-aware communication always helps.
-6. Inspect CSVs/graphs and rerun tests before publishing.
+
+## Experiments in this repository
+
+| Folder | What it tests | Agents |
+|---|---|---|
+| `src/`, `run_all.py` | Five rules for combining three agents' confidence | simulated |
+| `experiments/confidence_inflation/` | A one-number correction for overconfident agents | simulated |
+| `experiments/correlated_errors/` | Majority voting when agents fail together | simulated |
+| `experiments/real_llm_confidence/` | Real verbal confidence of qwen2.5:3b and llama3.1:8b on clinic notes in English and Roman Urdu, error overlap and the same five rules | local LLMs (Ollama) |
+
+Write-ups: [Averaging agents' confidence made the team less trustworthy](https://masmatixinnovations.co.uk/insights/agent-uncertainty-wire.html), [A one-number fix for overconfident agents worked, but barely](https://masmatixinnovations.co.uk/insights/confidence-inflation-calibration.html), [When AI agents fail together, more votes do not help](https://masmatixinnovations.co.uk/insights/correlated-errors-multi-agent-decisions.html).
 
 ## Reuse
 
-Code: MIT (`LICENSE`). Generated data/results: CC BY 4.0 (`DATA_LICENSE.txt`). No DOI has been minted. Consider a versioned GitHub release plus Zenodo only after reviewing the public repository and archived record.
+Code: MIT (`LICENSE`). Generated data and results: CC BY 4.0 (`DATA_LICENSE.txt`). No DOI has been minted yet.

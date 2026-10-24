@@ -1,0 +1,677 @@
+{
+ "description": "Invented physiotherapy notes (not real patients) with yes/no questions in English and Roman Urdu. Answer only from the note; anything the note does not say is 'no'.",
+ "items": [
+  {
+   "item_id": "N01-stated",
+   "note_id": "N01",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 45. Lower back pain for 3 weeks. The pain is worse when sitting and better when walking. No numbness in the legs. Takes paracetamol when needed.",
+    "question": "Is the pain worse when sitting?"
+   },
+   "ru": {
+    "note": "Mareez ki umar 45 saal hai. Kamar ke nichle hisse mein 3 hafte se dard hai. Baithne se dard barhta hai aur chalne se kam hota hai. Tangon mein koi sunn-pan nahi. Zaroorat par paracetamol leta hai.",
+    "question": "Kya baithne se dard barhta hai?"
+   }
+  },
+  {
+   "item_id": "N01-negation",
+   "note_id": "N01",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 45. Lower back pain for 3 weeks. The pain is worse when sitting and better when walking. No numbness in the legs. Takes paracetamol when needed.",
+    "question": "Does the note say there is no numbness in the legs?"
+   },
+   "ru": {
+    "note": "Mareez ki umar 45 saal hai. Kamar ke nichle hisse mein 3 hafte se dard hai. Baithne se dard barhta hai aur chalne se kam hota hai. Tangon mein koi sunn-pan nahi. Zaroorat par paracetamol leta hai.",
+    "question": "Kya note mein likha hai ke tangon mein sunn-pan nahi hai?"
+   }
+  },
+  {
+   "item_id": "N01-wrong_detail",
+   "note_id": "N01",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 45. Lower back pain for 3 weeks. The pain is worse when sitting and better when walking. No numbness in the legs. Takes paracetamol when needed.",
+    "question": "Has the back pain lasted 3 months?"
+   },
+   "ru": {
+    "note": "Mareez ki umar 45 saal hai. Kamar ke nichle hisse mein 3 hafte se dard hai. Baithne se dard barhta hai aur chalne se kam hota hai. Tangon mein koi sunn-pan nahi. Zaroorat par paracetamol leta hai.",
+    "question": "Kya kamar ka dard 3 maheene se hai?"
+   }
+  },
+  {
+   "item_id": "N01-not_in_note",
+   "note_id": "N01",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 45. Lower back pain for 3 weeks. The pain is worse when sitting and better when walking. No numbness in the legs. Takes paracetamol when needed.",
+    "question": "Has the patient had an X-ray?"
+   },
+   "ru": {
+    "note": "Mareez ki umar 45 saal hai. Kamar ke nichle hisse mein 3 hafte se dard hai. Baithne se dard barhta hai aur chalne se kam hota hai. Tangon mein koi sunn-pan nahi. Zaroorat par paracetamol leta hai.",
+    "question": "Kya mareez ka X-ray hua hai?"
+   }
+  },
+  {
+   "item_id": "N02-stated",
+   "note_id": "N02",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 62. She has right knee pain after a fall 10 days ago. The swelling is reduced. She can climb stairs slowly with a handrail. She does not smoke.",
+    "question": "Can the patient climb stairs with a handrail?"
+   },
+   "ru": {
+    "note": "Mareeza ki umar 62 saal hai. 10 din pehle girne ke baad daayen ghutne mein dard hai. Soojan kam ho gayi hai. Railing pakar kar aahista seerhiyan charh leti hai. Cigarette nahi peeti.",
+    "question": "Kya mareeza railing pakar kar seerhiyan charh sakti hai?"
+   }
+  },
+  {
+   "item_id": "N02-negation",
+   "note_id": "N02",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 62. She has right knee pain after a fall 10 days ago. The swelling is reduced. She can climb stairs slowly with a handrail. She does not smoke.",
+    "question": "Does the note say the patient does not smoke?"
+   },
+   "ru": {
+    "note": "Mareeza ki umar 62 saal hai. 10 din pehle girne ke baad daayen ghutne mein dard hai. Soojan kam ho gayi hai. Railing pakar kar aahista seerhiyan charh leti hai. Cigarette nahi peeti.",
+    "question": "Kya note mein likha hai ke mareeza cigarette nahi peeti?"
+   }
+  },
+  {
+   "item_id": "N02-wrong_detail",
+   "note_id": "N02",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 62. She has right knee pain after a fall 10 days ago. The swelling is reduced. She can climb stairs slowly with a handrail. She does not smoke.",
+    "question": "Is the pain in the left knee?"
+   },
+   "ru": {
+    "note": "Mareeza ki umar 62 saal hai. 10 din pehle girne ke baad daayen ghutne mein dard hai. Soojan kam ho gayi hai. Railing pakar kar aahista seerhiyan charh leti hai. Cigarette nahi peeti.",
+    "question": "Kya dard baayen ghutne mein hai?"
+   }
+  },
+  {
+   "item_id": "N02-not_in_note",
+   "note_id": "N02",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 62. She has right knee pain after a fall 10 days ago. The swelling is reduced. She can climb stairs slowly with a handrail. She does not smoke.",
+    "question": "Was the patient given a knee brace?"
+   },
+   "ru": {
+    "note": "Mareeza ki umar 62 saal hai. 10 din pehle girne ke baad daayen ghutne mein dard hai. Soojan kam ho gayi hai. Railing pakar kar aahista seerhiyan charh leti hai. Cigarette nahi peeti.",
+    "question": "Kya mareeza ko ghutne ki brace di gayi?"
+   }
+  },
+  {
+   "item_id": "N03-stated",
+   "note_id": "N03",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 30 and works in an office. Neck pain for 2 months, worse after long hours at the computer. Pain score 6 out of 10. No headaches.",
+    "question": "Is the pain score 6 out of 10?"
+   },
+   "ru": {
+    "note": "Mareez 30 saal ka hai aur daftar mein kaam karta hai. 2 maheene se gardan mein dard hai, computer par lambe ghante kaam ke baad barh jata hai. Dard 10 mein se 6 hai. Sar dard nahi hota.",
+    "question": "Kya dard 10 mein se 6 hai?"
+   }
+  },
+  {
+   "item_id": "N03-negation",
+   "note_id": "N03",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 30 and works in an office. Neck pain for 2 months, worse after long hours at the computer. Pain score 6 out of 10. No headaches.",
+    "question": "Does the note say the patient has no headaches?"
+   },
+   "ru": {
+    "note": "Mareez 30 saal ka hai aur daftar mein kaam karta hai. 2 maheene se gardan mein dard hai, computer par lambe ghante kaam ke baad barh jata hai. Dard 10 mein se 6 hai. Sar dard nahi hota.",
+    "question": "Kya note mein likha hai ke mareez ko sar dard nahi hota?"
+   }
+  },
+  {
+   "item_id": "N03-wrong_detail",
+   "note_id": "N03",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 30 and works in an office. Neck pain for 2 months, worse after long hours at the computer. Pain score 6 out of 10. No headaches.",
+    "question": "Has the neck pain lasted 2 weeks?"
+   },
+   "ru": {
+    "note": "Mareez 30 saal ka hai aur daftar mein kaam karta hai. 2 maheene se gardan mein dard hai, computer par lambe ghante kaam ke baad barh jata hai. Dard 10 mein se 6 hai. Sar dard nahi hota.",
+    "question": "Kya gardan ka dard 2 hafte se hai?"
+   }
+  },
+  {
+   "item_id": "N03-not_in_note",
+   "note_id": "N03",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 30 and works in an office. Neck pain for 2 months, worse after long hours at the computer. Pain score 6 out of 10. No headaches.",
+    "question": "Does the patient take ibuprofen?"
+   },
+   "ru": {
+    "note": "Mareez 30 saal ka hai aur daftar mein kaam karta hai. 2 maheene se gardan mein dard hai, computer par lambe ghante kaam ke baad barh jata hai. Dard 10 mein se 6 hai. Sar dard nahi hota.",
+    "question": "Kya mareez ibuprofen leta hai?"
+   }
+  },
+  {
+   "item_id": "N04-stated",
+   "note_id": "N04",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 55 and has diabetes. Left shoulder stiffness for 4 months. Cannot lift the arm above the head. Sleep is disturbed by pain at night.",
+    "question": "Is the patient's sleep disturbed by pain?"
+   },
+   "ru": {
+    "note": "Mareez 55 saal ka hai aur use sugar hai. 4 maheene se baayen kandhe mein akraahat hai. Baazu sar se ooper nahi utha sakta. Raat ko dard ki wajah se neend kharab hoti hai.",
+    "question": "Kya dard se mareez ki neend kharab hoti hai?"
+   }
+  },
+  {
+   "item_id": "N04-negation",
+   "note_id": "N04",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 55 and has diabetes. Left shoulder stiffness for 4 months. Cannot lift the arm above the head. Sleep is disturbed by pain at night.",
+    "question": "Does the note say the patient cannot lift the arm above the head?"
+   },
+   "ru": {
+    "note": "Mareez 55 saal ka hai aur use sugar hai. 4 maheene se baayen kandhe mein akraahat hai. Baazu sar se ooper nahi utha sakta. Raat ko dard ki wajah se neend kharab hoti hai.",
+    "question": "Kya note mein likha hai ke mareez baazu sar se ooper nahi utha sakta?"
+   }
+  },
+  {
+   "item_id": "N04-wrong_detail",
+   "note_id": "N04",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 55 and has diabetes. Left shoulder stiffness for 4 months. Cannot lift the arm above the head. Sleep is disturbed by pain at night.",
+    "question": "Is the stiffness in the right shoulder?"
+   },
+   "ru": {
+    "note": "Mareez 55 saal ka hai aur use sugar hai. 4 maheene se baayen kandhe mein akraahat hai. Baazu sar se ooper nahi utha sakta. Raat ko dard ki wajah se neend kharab hoti hai.",
+    "question": "Kya akraahat daayen kandhe mein hai?"
+   }
+  },
+  {
+   "item_id": "N04-not_in_note",
+   "note_id": "N04",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 55 and has diabetes. Left shoulder stiffness for 4 months. Cannot lift the arm above the head. Sleep is disturbed by pain at night.",
+    "question": "Has the patient had a shoulder injection?"
+   },
+   "ru": {
+    "note": "Mareez 55 saal ka hai aur use sugar hai. 4 maheene se baayen kandhe mein akraahat hai. Baazu sar se ooper nahi utha sakta. Raat ko dard ki wajah se neend kharab hoti hai.",
+    "question": "Kya mareez ko kandhe mein injection laga hai?"
+   }
+  },
+  {
+   "item_id": "N05-stated",
+   "note_id": "N05",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 28 and plays football. Right ankle sprain 5 days ago. Walks with a slight limp. Swelling on the outer side of the ankle. No previous ankle injury.",
+    "question": "Does the patient walk with a limp?"
+   },
+   "ru": {
+    "note": "Mareez 28 saal ka footballer hai. 5 din pehle daayen takhne mein moch aayi. Halka sa langra kar chalta hai. Takhne ke bahar wali taraf soojan hai. Pehle kabhi takhne par chot nahi lagi.",
+    "question": "Kya mareez langra kar chalta hai?"
+   }
+  },
+  {
+   "item_id": "N05-negation",
+   "note_id": "N05",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 28 and plays football. Right ankle sprain 5 days ago. Walks with a slight limp. Swelling on the outer side of the ankle. No previous ankle injury.",
+    "question": "Does the note say there was no previous ankle injury?"
+   },
+   "ru": {
+    "note": "Mareez 28 saal ka footballer hai. 5 din pehle daayen takhne mein moch aayi. Halka sa langra kar chalta hai. Takhne ke bahar wali taraf soojan hai. Pehle kabhi takhne par chot nahi lagi.",
+    "question": "Kya note mein likha hai ke pehle takhne par chot nahi lagi?"
+   }
+  },
+  {
+   "item_id": "N05-wrong_detail",
+   "note_id": "N05",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 28 and plays football. Right ankle sprain 5 days ago. Walks with a slight limp. Swelling on the outer side of the ankle. No previous ankle injury.",
+    "question": "Is the swelling on the inner side of the ankle?"
+   },
+   "ru": {
+    "note": "Mareez 28 saal ka footballer hai. 5 din pehle daayen takhne mein moch aayi. Halka sa langra kar chalta hai. Takhne ke bahar wali taraf soojan hai. Pehle kabhi takhne par chot nahi lagi.",
+    "question": "Kya soojan takhne ke andar wali taraf hai?"
+   }
+  },
+  {
+   "item_id": "N05-not_in_note",
+   "note_id": "N05",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 28 and plays football. Right ankle sprain 5 days ago. Walks with a slight limp. Swelling on the outer side of the ankle. No previous ankle injury.",
+    "question": "Has the patient been told to stop playing football for six weeks?"
+   },
+   "ru": {
+    "note": "Mareez 28 saal ka footballer hai. 5 din pehle daayen takhne mein moch aayi. Halka sa langra kar chalta hai. Takhne ke bahar wali taraf soojan hai. Pehle kabhi takhne par chot nahi lagi.",
+    "question": "Kya mareez ko chhe hafte football na khelne ka kaha gaya hai?"
+   }
+  },
+  {
+   "item_id": "N06-stated",
+   "note_id": "N06",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 70. Hip replacement surgery 6 weeks ago. Walks with a stick. Does exercises at home twice a day. No pain at rest.",
+    "question": "Does the patient walk with a stick?"
+   },
+   "ru": {
+    "note": "Mareez 70 saal ka hai. 6 hafte pehle kulhe ki tabdeeli ka operation hua. Chhari ke saath chalta hai. Ghar par din mein do baar exercise karta hai. Aaraam ke waqt dard nahi hota.",
+    "question": "Kya mareez chhari ke saath chalta hai?"
+   }
+  },
+  {
+   "item_id": "N06-negation",
+   "note_id": "N06",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 70. Hip replacement surgery 6 weeks ago. Walks with a stick. Does exercises at home twice a day. No pain at rest.",
+    "question": "Does the note say there is no pain at rest?"
+   },
+   "ru": {
+    "note": "Mareez 70 saal ka hai. 6 hafte pehle kulhe ki tabdeeli ka operation hua. Chhari ke saath chalta hai. Ghar par din mein do baar exercise karta hai. Aaraam ke waqt dard nahi hota.",
+    "question": "Kya note mein likha hai ke aaraam ke waqt dard nahi hota?"
+   }
+  },
+  {
+   "item_id": "N06-wrong_detail",
+   "note_id": "N06",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 70. Hip replacement surgery 6 weeks ago. Walks with a stick. Does exercises at home twice a day. No pain at rest.",
+    "question": "Does the patient do exercises three times a day?"
+   },
+   "ru": {
+    "note": "Mareez 70 saal ka hai. 6 hafte pehle kulhe ki tabdeeli ka operation hua. Chhari ke saath chalta hai. Ghar par din mein do baar exercise karta hai. Aaraam ke waqt dard nahi hota.",
+    "question": "Kya mareez din mein teen baar exercise karta hai?"
+   }
+  },
+  {
+   "item_id": "N06-not_in_note",
+   "note_id": "N06",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 70. Hip replacement surgery 6 weeks ago. Walks with a stick. Does exercises at home twice a day. No pain at rest.",
+    "question": "Does the patient live alone?"
+   },
+   "ru": {
+    "note": "Mareez 70 saal ka hai. 6 hafte pehle kulhe ki tabdeeli ka operation hua. Chhari ke saath chalta hai. Ghar par din mein do baar exercise karta hai. Aaraam ke waqt dard nahi hota.",
+    "question": "Kya mareez akela rehta hai?"
+   }
+  },
+  {
+   "item_id": "N07-stated",
+   "note_id": "N07",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 40 and works as a teacher. Pain in the right elbow for 6 weeks when gripping or lifting bags. Pain score 4 out of 10. She has not tried any treatment yet.",
+    "question": "Is the pain in the right elbow?"
+   },
+   "ru": {
+    "note": "Mareeza 40 saal ki teacher hai. 6 hafte se cheez pakarne ya bag uthane par daayen kohni mein dard hota hai. Dard 10 mein se 4 hai. Abhi tak koi ilaaj nahi aazmaya.",
+    "question": "Kya dard daayen kohni mein hai?"
+   }
+  },
+  {
+   "item_id": "N07-negation",
+   "note_id": "N07",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 40 and works as a teacher. Pain in the right elbow for 6 weeks when gripping or lifting bags. Pain score 4 out of 10. She has not tried any treatment yet.",
+    "question": "Does the note say no treatment has been tried yet?"
+   },
+   "ru": {
+    "note": "Mareeza 40 saal ki teacher hai. 6 hafte se cheez pakarne ya bag uthane par daayen kohni mein dard hota hai. Dard 10 mein se 4 hai. Abhi tak koi ilaaj nahi aazmaya.",
+    "question": "Kya note mein likha hai ke abhi tak koi ilaaj nahi aazmaya gaya?"
+   }
+  },
+  {
+   "item_id": "N07-wrong_detail",
+   "note_id": "N07",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 40 and works as a teacher. Pain in the right elbow for 6 weeks when gripping or lifting bags. Pain score 4 out of 10. She has not tried any treatment yet.",
+    "question": "Is the pain score 7 out of 10?"
+   },
+   "ru": {
+    "note": "Mareeza 40 saal ki teacher hai. 6 hafte se cheez pakarne ya bag uthane par daayen kohni mein dard hota hai. Dard 10 mein se 4 hai. Abhi tak koi ilaaj nahi aazmaya.",
+    "question": "Kya dard 10 mein se 7 hai?"
+   }
+  },
+  {
+   "item_id": "N07-not_in_note",
+   "note_id": "N07",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 40 and works as a teacher. Pain in the right elbow for 6 weeks when gripping or lifting bags. Pain score 4 out of 10. She has not tried any treatment yet.",
+    "question": "Does the patient wear an elbow strap?"
+   },
+   "ru": {
+    "note": "Mareeza 40 saal ki teacher hai. 6 hafte se cheez pakarne ya bag uthane par daayen kohni mein dard hota hai. Dard 10 mein se 4 hai. Abhi tak koi ilaaj nahi aazmaya.",
+    "question": "Kya mareeza kohni par strap pehenti hai?"
+   }
+  },
+  {
+   "item_id": "N08-stated",
+   "note_id": "N08",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 50. Pain in the middle of the back for 1 week after moving furniture. Can bend forward without pain. Taking ibuprofen twice a day.",
+    "question": "Is the patient taking ibuprofen?"
+   },
+   "ru": {
+    "note": "Mareez 50 saal ka hai. Furniture uthane ke baad 1 hafte se kamar ke darmiyan mein dard hai. Aage jhukne par dard nahi hota. Din mein do baar ibuprofen le raha hai.",
+    "question": "Kya mareez ibuprofen le raha hai?"
+   }
+  },
+  {
+   "item_id": "N08-negation",
+   "note_id": "N08",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 50. Pain in the middle of the back for 1 week after moving furniture. Can bend forward without pain. Taking ibuprofen twice a day.",
+    "question": "Does the note say bending forward is not painful?"
+   },
+   "ru": {
+    "note": "Mareez 50 saal ka hai. Furniture uthane ke baad 1 hafte se kamar ke darmiyan mein dard hai. Aage jhukne par dard nahi hota. Din mein do baar ibuprofen le raha hai.",
+    "question": "Kya note mein likha hai ke aage jhukne par dard nahi hota?"
+   }
+  },
+  {
+   "item_id": "N08-wrong_detail",
+   "note_id": "N08",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 50. Pain in the middle of the back for 1 week after moving furniture. Can bend forward without pain. Taking ibuprofen twice a day.",
+    "question": "Did the pain start after a car accident?"
+   },
+   "ru": {
+    "note": "Mareez 50 saal ka hai. Furniture uthane ke baad 1 hafte se kamar ke darmiyan mein dard hai. Aage jhukne par dard nahi hota. Din mein do baar ibuprofen le raha hai.",
+    "question": "Kya dard car accident ke baad shuru hua?"
+   }
+  },
+  {
+   "item_id": "N08-not_in_note",
+   "note_id": "N08",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 50. Pain in the middle of the back for 1 week after moving furniture. Can bend forward without pain. Taking ibuprofen twice a day.",
+    "question": "Has the patient been referred to a surgeon?"
+   },
+   "ru": {
+    "note": "Mareez 50 saal ka hai. Furniture uthane ke baad 1 hafte se kamar ke darmiyan mein dard hai. Aage jhukne par dard nahi hota. Din mein do baar ibuprofen le raha hai.",
+    "question": "Kya mareez ko surgeon ke paas bheja gaya hai?"
+   }
+  },
+  {
+   "item_id": "N09-stated",
+   "note_id": "N09",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 35. Pain under the right heel for 3 months, worst with the first steps in the morning. She stands at work all day. No recent weight change.",
+    "question": "Is the heel pain worst with the first steps in the morning?"
+   },
+   "ru": {
+    "note": "Mareeza 35 saal ki hai. 3 maheene se daayen eri ke neeche dard hai, subah pehle qadam par sab se zyada. Kaam par saara din khari rehti hai. Haal mein wazan mein koi tabdeeli nahi.",
+    "question": "Kya eri ka dard subah pehle qadmon par sab se zyada hota hai?"
+   }
+  },
+  {
+   "item_id": "N09-negation",
+   "note_id": "N09",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 35. Pain under the right heel for 3 months, worst with the first steps in the morning. She stands at work all day. No recent weight change.",
+    "question": "Does the note say there has been no recent weight change?"
+   },
+   "ru": {
+    "note": "Mareeza 35 saal ki hai. 3 maheene se daayen eri ke neeche dard hai, subah pehle qadam par sab se zyada. Kaam par saara din khari rehti hai. Haal mein wazan mein koi tabdeeli nahi.",
+    "question": "Kya note mein likha hai ke haal mein wazan mein koi tabdeeli nahi?"
+   }
+  },
+  {
+   "item_id": "N09-wrong_detail",
+   "note_id": "N09",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 35. Pain under the right heel for 3 months, worst with the first steps in the morning. She stands at work all day. No recent weight change.",
+    "question": "Is the pain under the left heel?"
+   },
+   "ru": {
+    "note": "Mareeza 35 saal ki hai. 3 maheene se daayen eri ke neeche dard hai, subah pehle qadam par sab se zyada. Kaam par saara din khari rehti hai. Haal mein wazan mein koi tabdeeli nahi.",
+    "question": "Kya dard baayen eri ke neeche hai?"
+   }
+  },
+  {
+   "item_id": "N09-not_in_note",
+   "note_id": "N09",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 35. Pain under the right heel for 3 months, worst with the first steps in the morning. She stands at work all day. No recent weight change.",
+    "question": "Does the patient use insoles?"
+   },
+   "ru": {
+    "note": "Mareeza 35 saal ki hai. 3 maheene se daayen eri ke neeche dard hai, subah pehle qadam par sab se zyada. Kaam par saara din khari rehti hai. Haal mein wazan mein koi tabdeeli nahi.",
+    "question": "Kya mareeza joote mein insole istemal karti hai?"
+   }
+  },
+  {
+   "item_id": "N10-stated",
+   "note_id": "N10",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 65. Stroke 3 months ago. Weakness in the left arm. Can walk 50 metres with a frame. No problem with speech.",
+    "question": "Can the patient walk 50 metres with a frame?"
+   },
+   "ru": {
+    "note": "Mareez 65 saal ka hai. 3 maheene pehle falij ka hamla hua. Baayen baazu mein kamzori hai. Walker ke saath 50 meter chal sakta hai. Bolne mein koi masla nahi.",
+    "question": "Kya mareez walker ke saath 50 meter chal sakta hai?"
+   }
+  },
+  {
+   "item_id": "N10-negation",
+   "note_id": "N10",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 65. Stroke 3 months ago. Weakness in the left arm. Can walk 50 metres with a frame. No problem with speech.",
+    "question": "Does the note say there is no problem with speech?"
+   },
+   "ru": {
+    "note": "Mareez 65 saal ka hai. 3 maheene pehle falij ka hamla hua. Baayen baazu mein kamzori hai. Walker ke saath 50 meter chal sakta hai. Bolne mein koi masla nahi.",
+    "question": "Kya note mein likha hai ke bolne mein koi masla nahi?"
+   }
+  },
+  {
+   "item_id": "N10-wrong_detail",
+   "note_id": "N10",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 65. Stroke 3 months ago. Weakness in the left arm. Can walk 50 metres with a frame. No problem with speech.",
+    "question": "Is the weakness in the right arm?"
+   },
+   "ru": {
+    "note": "Mareez 65 saal ka hai. 3 maheene pehle falij ka hamla hua. Baayen baazu mein kamzori hai. Walker ke saath 50 meter chal sakta hai. Bolne mein koi masla nahi.",
+    "question": "Kya kamzori daayen baazu mein hai?"
+   }
+  },
+  {
+   "item_id": "N10-not_in_note",
+   "note_id": "N10",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 65. Stroke 3 months ago. Weakness in the left arm. Can walk 50 metres with a frame. No problem with speech.",
+    "question": "Does the patient have high blood pressure?"
+   },
+   "ru": {
+    "note": "Mareez 65 saal ka hai. 3 maheene pehle falij ka hamla hua. Baayen baazu mein kamzori hai. Walker ke saath 50 meter chal sakta hai. Bolne mein koi masla nahi.",
+    "question": "Kya mareez ko blood pressure hai?"
+   }
+  },
+  {
+   "item_id": "N11-stated",
+   "note_id": "N11",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 22 and a student. Pain at the front of the left knee when running or using stairs, for 2 months. No swelling. She runs 3 times a week.",
+    "question": "Does the patient run 3 times a week?"
+   },
+   "ru": {
+    "note": "Mareeza 22 saal ki student hai. 2 maheene se daurne ya seerhiyan istemal karne par baayen ghutne ke saamne dard hota hai. Soojan nahi hai. Hafte mein 3 baar daurti hai.",
+    "question": "Kya mareeza hafte mein 3 baar daurti hai?"
+   }
+  },
+  {
+   "item_id": "N11-negation",
+   "note_id": "N11",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 22 and a student. Pain at the front of the left knee when running or using stairs, for 2 months. No swelling. She runs 3 times a week.",
+    "question": "Does the note say there is no swelling?"
+   },
+   "ru": {
+    "note": "Mareeza 22 saal ki student hai. 2 maheene se daurne ya seerhiyan istemal karne par baayen ghutne ke saamne dard hota hai. Soojan nahi hai. Hafte mein 3 baar daurti hai.",
+    "question": "Kya note mein likha hai ke soojan nahi hai?"
+   }
+  },
+  {
+   "item_id": "N11-wrong_detail",
+   "note_id": "N11",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 22 and a student. Pain at the front of the left knee when running or using stairs, for 2 months. No swelling. She runs 3 times a week.",
+    "question": "Has the knee pain lasted 6 months?"
+   },
+   "ru": {
+    "note": "Mareeza 22 saal ki student hai. 2 maheene se daurne ya seerhiyan istemal karne par baayen ghutne ke saamne dard hota hai. Soojan nahi hai. Hafte mein 3 baar daurti hai.",
+    "question": "Kya ghutne ka dard 6 maheene se hai?"
+   }
+  },
+  {
+   "item_id": "N11-not_in_note",
+   "note_id": "N11",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 22 and a student. Pain at the front of the left knee when running or using stairs, for 2 months. No swelling. She runs 3 times a week.",
+    "question": "Has the patient had an MRI scan?"
+   },
+   "ru": {
+    "note": "Mareeza 22 saal ki student hai. 2 maheene se daurne ya seerhiyan istemal karne par baayen ghutne ke saamne dard hota hai. Soojan nahi hai. Hafte mein 3 baar daurti hai.",
+    "question": "Kya mareeza ka MRI scan hua hai?"
+   }
+  },
+  {
+   "item_id": "N12-stated",
+   "note_id": "N12",
+   "type": "stated",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 48. Pain and tingling in the right hand at night for 5 weeks. Works on a computer. Grip strength is normal. Has not had a nerve test.",
+    "question": "Does the tingling happen at night?"
+   },
+   "ru": {
+    "note": "Mareez 48 saal ka hai. 5 hafte se raat ko daayen haath mein dard aur jhunjhunahat hoti hai. Computer par kaam karta hai. Pakar ki taaqat theek hai. Nas ka test nahi hua.",
+    "question": "Kya jhunjhunahat raat ko hoti hai?"
+   }
+  },
+  {
+   "item_id": "N12-negation",
+   "note_id": "N12",
+   "type": "negation",
+   "answer": "yes",
+   "en": {
+    "note": "Patient is 48. Pain and tingling in the right hand at night for 5 weeks. Works on a computer. Grip strength is normal. Has not had a nerve test.",
+    "question": "Does the note say the patient has not had a nerve test?"
+   },
+   "ru": {
+    "note": "Mareez 48 saal ka hai. 5 hafte se raat ko daayen haath mein dard aur jhunjhunahat hoti hai. Computer par kaam karta hai. Pakar ki taaqat theek hai. Nas ka test nahi hua.",
+    "question": "Kya note mein likha hai ke nas ka test nahi hua?"
+   }
+  },
+  {
+   "item_id": "N12-wrong_detail",
+   "note_id": "N12",
+   "type": "wrong_detail",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 48. Pain and tingling in the right hand at night for 5 weeks. Works on a computer. Grip strength is normal. Has not had a nerve test.",
+    "question": "Is grip strength reduced?"
+   },
+   "ru": {
+    "note": "Mareez 48 saal ka hai. 5 hafte se raat ko daayen haath mein dard aur jhunjhunahat hoti hai. Computer par kaam karta hai. Pakar ki taaqat theek hai. Nas ka test nahi hua.",
+    "question": "Kya pakar ki taaqat kam hai?"
+   }
+  },
+  {
+   "item_id": "N12-not_in_note",
+   "note_id": "N12",
+   "type": "not_in_note",
+   "answer": "no",
+   "en": {
+    "note": "Patient is 48. Pain and tingling in the right hand at night for 5 weeks. Works on a computer. Grip strength is normal. Has not had a nerve test.",
+    "question": "Does the patient wear a wrist splint at night?"
+   },
+   "ru": {
+    "note": "Mareez 48 saal ka hai. 5 hafte se raat ko daayen haath mein dard aur jhunjhunahat hoti hai. Computer par kaam karta hai. Pakar ki taaqat theek hai. Nas ka test nahi hua.",
+    "question": "Kya mareez raat ko kalai par splint pehenta hai?"
+   }
+  }
+ ]
+}
