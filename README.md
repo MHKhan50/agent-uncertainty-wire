@@ -1,5 +1,7 @@
 # Agent Uncertainty Wire: how AI agents report and combine confidence
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24228563.svg)](https://doi.org/10.5281/zenodo.24228563)
+
 **Version:** 0.3.0 · **Author:** Muzammal Hussain · **Date:** 23 October 2026  
 **Runtime:** Python 3.9+; standard library only. The synthetic benchmark needs no internet or LLM; the real-model experiment needs Ollama.
 
@@ -74,4 +76,4 @@ Write-ups: [Averaging agents' confidence made the team less trustworthy](https:/
 
 ## Reuse
 
-Code: MIT (`LICENSE`). Generated data and results: CC BY 4.0 (`DATA_LICENSE.txt`). No DOI has been minted yet.
+Code: MIT (`LICENSE`). Generated data and results: CC BY 4.0 (`DATA_LICENSE.txt`). DOI: [10.5281/zenodo.24228563](https://doi.org/10.5281/zenodo.24228563).
